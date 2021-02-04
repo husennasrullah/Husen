@@ -1,0 +1,37 @@
+.header {
+    float: left;
+    width: 29%;  
+    height: 590px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: azure;
+    border-radius: 2%;
+    
+}
+
+.isi {
+    float: right;
+    width: 69%;
+    height: 100%;
+}
+
+.kotak {
+    margin-left: 30%;
+	width : 500px;
+	background: blanchedalmond;
+	height : 600px;
+	border-radius: 2%;
+    border-style: solid;
+    border-width: 1px;
+    padding : 2px 2px 2px 2px;
+
+}
+
+h6{
+    font-size: 10px;
+}
+
+p{
+    letter-spacing: 1pt;
+    font-size: 10px;
+}
