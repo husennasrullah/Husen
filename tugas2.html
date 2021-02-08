@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tugas2.js" defer> </script>
+    <script src="paging.js" defer> </script>
+    <link rel="stylesheet" type="text/css" href="tugas2.css">
+    <title>Tugas 2</title>
+</head>
+
+<body>
+    <div class="kiri">
+        <div class="judul">
+            <p>
+                <center><b>Masukkan Data Anda dibawah ini :</b>
+                    <center>
+            </p>
+        </div>
+
+        <hr />
+
+        <div class="form">
+            <div class="kiri1">
+                <div class="field">
+                    <label class="label" for="nama"> Nama </label>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="ttl"> TTL </label>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="alamat"> Alamat </label>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="jk"> Jenis-Kelamin </label>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="hobby"> Hobby </label>
+                </div>
+
+                <div class="field">
+                    <label class="label" for="agama"> Agama </label>
+                </div>
+            </div>
+            <div class="kanan1">
+
+                <div class="field">
+                    <input class="input" type="text" id="id" hidden="true">
+                </div>
+
+                <div class="field">
+                    <input class="input" type="text" id="nama" placeholder="masukkan nama">
+                </div>
+
+                <div class="field">
+                    <input class="input" type="text" id="tempat" placeholder="tempat lahir">
+                    <input class="input" type="date" id="ttl">
+                </div>
+
+                <div class="field">
+                    <input class="input" type="text" id="alamat" placeholder="masukkan alamat">
+                </div>
+
+                <div class="field2">
+                    <input class="input" type="radio" name="jk" value="L">Laki2
+                    <input class="input" type="radio" name="jk" value="P">Perempuan
+                </div>
+
+                <div class="field2">
+                    <input class="input" name="hobby" type="checkbox" value="berenang"
+                        onclick="return validasi()">Berenang
+                    <input class="input" name="hobby" type="checkbox" value="jogging"
+                        onclick="return validasi()">Jogging
+                    <input class="input" name="hobby" type="checkbox" value="bersepeda"
+                        onclick="return validasi()">Bersepeda
+                    <input class="input" name="hobby" type="checkbox" value="futsal" onclick="return validasi()">Futsal
+                </div>
+
+                <div class="field2">
+                    <select id="agama" name="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="submit">
+            <button class="tombol" onclick="handleSubmit()"> Submit </button>
+            <button class="tombolreset" onclick="resetForm()"> Reset </button>
+        </div>
+
+        <hr />
+
+        <div>
+            <p>
+                <center><b>LIST NAMA :</b>
+                    <center>
+            </p>
+        </div>
+
+        <div>
+            <div>
+                <center><input id="filterRow" class="input" type="text" name="cari" placeholder="search"
+                        onkeyup="searchRow()"></center>
+            </div>
+
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Umur</th>
+                        <th scope="col">Alamat</th>
+                        <th scope="col">Jenis-Kelamin</th>
+                        <th scope="col">Hobby</th>
+                        <th scope="col">Agama</th>
+                        <th scope="col">Action</th>
+                </thead>
+                <tbody id="isiData"></tbody>
+            </table>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

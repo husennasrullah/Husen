@@ -1,0 +1,168 @@
+
+.body {
+	background-color :#fefefe;
+	padding : 1%;
+}
+
+.form {
+	height: 20%;
+	display : flex;
+}
+
+.submit {
+	height: 5%;
+	display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+	width : 50px;
+	align-self : center;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+
+.field {
+	display : flex;
+	font-size : 18px;
+	margin-bottom : 1px;
+}
+
+.field2 {
+	display : flex;
+	font-size : 14px;
+    margin-bottom : 2px;
+    margin-left: 1px;
+    
+}
+
+.input{
+	height : 20px;
+	margin : 2px 0px 2px 0px;
+	width: 200px;
+	border: 1px solid #e1e1e1;
+	border-radius: 1vh;
+	text-align : center;
+}
+.tombol{
+	background: #46de4b;
+	color: white;
+	font-size: 11pt;
+	width: 45%;
+	border: 2px solid #080808;
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin: 10px 0px 10px 0px;
+    
+}
+
+.tombolreset{
+	background: #de5846;
+	color: white;
+	font-size: 11pt;
+	width: 45%;
+	border: 2px solid #080808;
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin: 10px 0px 10px 0px;
+}
+
+.kiri {
+   float : left;
+   width : 50%;
+   padding : 1,5vh;
+   height: 100%;
+   margin-left: 25%;
+   background: cornsilk;
+   padding-left: 2%;
+   padding-right: 2%;
+}		
+
+.kiri1 {
+   float : left;
+   width : 30%;
+   height: 100%;
+   font-family: Calibri;
+   text-align : left;
+   padding-left: 2%;
+ 
+}		
+.kanan1 {
+   float : right;
+   width : 60%;
+   height: 100%;
+   font-family: Calibri;
+}	
+
+table {
+    width : 100%;
+    text-align: center;
+}
+
+/* /////////////////////////////////////// */
+
+body {
+    box-sizing: border-box;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 14pt;
+    min-width: 400px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table tr {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom:2px solid #009879;
+}
+
+.tomboledit {
+    background: #46de4b;
+	color: white;
+	border: 1px solid #080808;
+	border-radius: 5px;
+}
+
+.tomboldelete {
+    background: #de464e;
+	color: black;
+	border: 1px solid #080808;
+	border-radius: 5px;
+}
+
+.judul {
+    margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 24px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+}
+
